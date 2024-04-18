@@ -1,4 +1,4 @@
-'''from cryptography.fernet import Fernet'''
+from cryptography.fernet import Fernet
 
 '''
 def write_key():
@@ -7,7 +7,7 @@ def write_key():
         key_file.write(key)'''
 
 
-'''def load_key():
+def load_key():
     file = open("key.key", "rb")
     key = file.read()
     file.close()
@@ -15,7 +15,7 @@ def write_key():
 
 
 key = load_key()
-fer = Fernet(key)'''
+fer = Fernet(key)
 
 
 def view():
@@ -48,4 +48,3 @@ while True:
     else:
         print("Invalid mode.")
         continue
-
